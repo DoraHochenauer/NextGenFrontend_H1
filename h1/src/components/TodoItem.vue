@@ -23,13 +23,21 @@ const emit = defineEmits(['deleteItem']);
 </script>
 
 <template>
-    <span class="item">
+    <div class="item" :class="{ done: item.done }">
 
-        <h2>{{ item.header }}</h2>
-        <span>{{ item.content }}</span>
-        <input type="checkbox" id="checkbox" v-model="item.done" />
-        <button @click="$emit('deleteItem', item.id)">delete</button>
-    </span>
+        <div class="item-text">
+
+            <h2>{{ item.header }}</h2>
+            <p>{{ item.content }}</p>
+        </div>
+
+        <div class="item-controls">
+            <span class="checkbox">
+                <input type="checkbox" id="checkbox" v-model="item.done" />
+            </span>
+            <button class="delete-button todo-button" @click="$emit('deleteItem', item.id)">Löschen</button>
+        </div>
+    </div>
 
 
 </template>

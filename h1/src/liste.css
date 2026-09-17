@@ -1,20 +1,78 @@
+h1{}
+
+p{
+    color: #181818;
+}
+
 .item-list {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 
-    list-style: none;
-    padding: 15px;
-    margin: 5px auto;
+}
 
 
+
+.checkbox {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+}
+
+.item-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+
+.item-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.item {
     border-radius: 5px;
     border-width: 1px;
     border-style: solid;
     border-color: rgb(69, 69, 69);
-    width: 25%;
+
+    list-style: none;
+    padding: 15px;
+    margin: 5px auto;
+
+    width: 70%;
+}
+
+.item.done {
+    background: #7b7b7b;
+    opacity: 0.8;
 }
 
 .item:hover {
-    background: #94949c;
+    background: #dedeff;
+    opacity: 0.9;
+}
+
+.checkbox input:checked {
+    background: #b8b8b9;
+}
+
+.todo-button {
+    padding: 3px;
+    margin: 6px;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(73, 73, 73);
+}
+
+.delete-button {
+    background-color: #ef9999;
+}
+
+.filter-button {
+    background-color: #c8cdff;
 }

@@ -54,9 +54,9 @@ function RemoveItem(id: number) {
 </script>
 
 <template>
-    <h1>To Do Liste</h1>
+    
     <ul class="item-list" v-for="item in _itemList">
-        <ItemComp class="item" @delete-item="DeleteItem(item.id)"
+        <ItemComp @delete-item="DeleteItem(item.id)"
             v-if="filterstate == 'all' || filterstate == 'open' && item.done == false || filterstate == 'closed' && item.done == true"
             :item="item" />
     </ul>
