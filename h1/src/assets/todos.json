@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "header": "Haushalt",
+        "content": "Bad putzen",
+        "done": false
+    },
+    {
+        "id": 2,
+        "header": "Haushalt",
+        "content": "Müll rausbringen",
+        "done": false
+    },
+    {
+        "id": 3,
+        "header": "Haushalt",
+        "content": "Katze füttern",
+        "done": false
+    },
+    {
+        "id": 4,
+        "header": "Uni",
+        "content": "Hausübung machen",
+        "done": false
+    },
+    {
+        "id": 5,
+        "header": "Uni",
+        "content": "lernen",
+        "done": false
+    }
+]
